@@ -1,0 +1,55 @@
+Steps:
+
+1.Create an instance through the console or boto3
+	-In the security groups part add rule for http and allow all inbound ips
+	-Launch this instance after reviewing
+	-create a new pair or use an existing one
+
+2.SSh into the instance
+	-First restrict the permissions for the key.pem file
+		chmod 400 /filepath/key.pem
+	-SSH into the instance
+		ssh -i /home/semil/Desktop/AWS-assignment-1/semil-demo.pem ec2-user@ec2-18-218-76-2.us-east-2.compute.amazonaws.com
+
+3.sudo su
+
+4.Update yum packages 
+	-yum update -y
+
+5. Install an apache webserver
+	yum install httpd -y
+
+6. Start the web server
+	service httpd start
+
+7.Add a static index.html file
+	-cd /var/www/html 
+	-nano index.html
+	-add (<html><body>My first EC2 instance</body></html>)
+	-exit and save
+
+8.You can view the index.html page on browser by typing the public ip on the browser
+
+9. Create a snapshot of the ec2 instance
+	-Navigate to snapshot
+	-click on create snapshot
+	-select the instance by id
+	-configure details
+	-create snapshot
+
+10. Copying the snapshot into another region
+	-Go to snapshots
+	-Select the desired snapshot
+	-Actions->Copy
+	-Select the region 
+	-configure encryption details 
+	-Copy
+	
+11. Deploy the copy of snapshot in other region
+	-switch to that region
+	-Go to Snapshots
+	-Select the snapshot
+	-Actions->Create image
+	-Goto AMIs and locate the created image
+	-Launch when status=Availiable
+	

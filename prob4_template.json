@@ -1,0 +1,4 @@
+#set($inputRoot = $input.path('$'))
+{ 
+    "name" : "$input.params('name')"
+}

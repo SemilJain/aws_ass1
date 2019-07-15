@@ -1,0 +1,17 @@
+Steps for problem 6:
+
+
+1. Go to load balancer
+2. Create load balancer
+3. Application load balancer-> Create
+4. Type name, select vpc  and select two subnets
+5. Click Next
+6. Again Next
+7. Select existing Security Group
+8. Click Next
+9. Select new Target Group
+10. Select Target Type as IP
+11. click next
+12. Add the private ip address of an instance
+13. click next
+14. click create

@@ -1,0 +1,15 @@
+Steps for problem 7:
+
+
+1. In EC2 select Launch Configuration
+2. Create launch configuaration
+3. select amazon linux 2
+4. In advance details section add the apache server script.
+5. In configure security group add http and https
+6. Click next and launch configuaration
+7. Now create autoscaling group
+8. Add vpc and subnets
+9. In configure scale policies scale between 1-5
+10. Ilick launch
+11. Select instance->copy the public ip address->paste in browser
+12. This opens the apache server.

@@ -1,0 +1,42 @@
+#Entering this text to create a new version of the file ..problem 2  
+
+
+1. Create an instance, install apache server and add an index.html file and view that file in the browser. Take snapshot of this instance and deploy it in another region.
+Deliverable: Mention the steps for achieving this
+
+    2. Assuming you have a versioning enabled S3 bucket and multiple versions of the same object, Write a python script which takes the bucket name and object path as parameters and downloads the 2nd latest version of this object i.e the one prior to the latest version.
+Deliverable: Python script
+
+    3. Create bucket MyBucket and folder MySecretFolder. Write a bucket policy which allows all users to retrieve any object in MyBucket except those in the MySecretFolder. It also grants put and delete permission to the root user of AWS account.
+Deliverable: Bucket policy
+
+    4. Create API Gateway which triggers lambda Function and prints the name of the user passed in the request.
+Deliverable: Python Code.
+
+    5. Write a lambda function to copy an object from one s3 bucket to another.
+Deliverable: Python Code.
+
+    6. Your company has recently hired a group of 10 freelancers for a specific project for a short period of time. Your manager wants them to access the AWS account only when they are within the organization’s network. Design an IAM policy to achieve this following the best practices.
+Deliverable: Description of your strategy and IAM policy
+
+    7. Write a python program to create and attach an IAM role to a EC2 instance to provide full access of S3
+Deliverable: Python code
+
+    8. Create an RDS MySQL instance and connect to it from an EC2 instance. Perform crud operations using python.
+Deliverable: Python Script
+
+    9. Write a program that creates your table “Games” in your AWS DynamoDB and adds certains items in the dynamo db. Example schema: 
+Schema “Games” :
+gid {Number}
+gname {String}
+publisher {String} 
+rating {Number}
+release_date {String}
+genres {String Set}
+Deliverable: Script
+
+    10. Write a program that reads your table “Games” from your AWS DynamoDB and 
+Returns only the game where ‘gid=2’ (“Query” Feature DynamoDB).
+Prints out the ‘gname’ and the ‘rating’ only.
+Deliverable: Script
+
